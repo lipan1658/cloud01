@@ -1,0 +1,25 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: feign-hystrix
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: feign-hystrix-9005
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+feign:
+  hystrix:
+    enabled: true
+#info信息
+info:
+  app:
+    name: feign-hystrix-9005
+  company:
+    name: www.xxx.com
+  build:
+    artifactId: @project.artifactId@
+    version: @project.version@

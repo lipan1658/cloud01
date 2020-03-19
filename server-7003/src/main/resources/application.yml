@@ -1,0 +1,16 @@
+server:
+  port: 7003
+spring:
+  application:
+    name: server
+eureka:
+  client:
+    #要不要去注册中心获取其他服务的地址
+    fetch-registry: false
+    #自己就是注册中心，不用注册自己
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/
+  instance:
+    hostname: localhost
+    instance-id: server-7003

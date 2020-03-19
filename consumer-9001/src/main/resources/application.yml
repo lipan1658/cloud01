@@ -1,0 +1,22 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consumer
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: consumer-9001
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+#info信息
+info:
+  app:
+    name: consumer-9001
+  company:
+    name: www.xxx.com
+  build:
+    artifactId: @project.artifactId@
+    version: @project.version@

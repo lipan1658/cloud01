@@ -1,0 +1,13 @@
+# Project exclude paths
+/client-8001/target/
+/client-8002/target/
+/config-client-6002/target/
+/config-server-6001/target/
+/consumer-9001/target/
+/feign-9003/target/
+/feign-hystrix-9005/target/
+/ribbon-9002/target/
+/ribbon-hystrix-9004/target/
+/server-7001/target/
+/server-7002/target/
+/server-7003/target/

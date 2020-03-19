@@ -1,0 +1,22 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: client
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: client-8001
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+#info信息
+info:
+  app:
+    name: client-8001
+  company:
+    name: www.xxx.com
+  build:
+    artifactId: @project.artifactId@
+    version: @project.version@

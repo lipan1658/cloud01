@@ -6,7 +6,6 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableHystrix
 @EnableFeignClients
 public class FeignHystrix9005Application {
     public static void main(String[] args) {

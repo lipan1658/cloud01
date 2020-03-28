@@ -18,5 +18,5 @@ info:
   company:
     name: www.xxx.com
   build:
-    artifactId: @project.artifactId@
-    version: @project.version@
+    artifactId: ${project.artifactId}
+    version: ${project.version}
